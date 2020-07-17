@@ -230,6 +230,53 @@
           null
         ]
       },
+      "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/spec/models/mechanic_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/app/models/mechanic.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/spec/models/ride_mechanic_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/app/models/ride_mechanic.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/spec/models/ride_spec.rb": {
         "lines": [
           1,
@@ -259,6 +306,6 @@
         ]
       }
     },
-    "timestamp": 1594999944
+    "timestamp": 1595000323
   }
 }

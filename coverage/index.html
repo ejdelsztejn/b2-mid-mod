@@ -14,7 +14,7 @@
       <img src="./assets/0.11.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-07-17T11:32:24-04:00">2020-07-17T11:32:24-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-07-17T11:38:43-04:00">2020-07-17T11:38:43-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.1
+         1.15
        </span>
     </span> hits/line
     )
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>18</b> files in total.
+    <b>22</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>58</b> relevant lines,
-    <span class="green"><b>58</b> lines covered</span> and
+    <b>78</b> relevant lines,
+    <span class="green"><b>78</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -103,11 +103,33 @@
         </tr>
       
         <tr class="t-file">
+          <td class="strong t-file__name"><a href="#c97064d4830db1cae7170212b8f59955315f328a" class="src_link" title="app/models/mechanic.rb">app/models/mechanic.rb</a></td>
+          <td class="green strong t-file__coverage">100.0 %</td>
+          <td>6</td>
+          <td>4</td>
+          <td>4</td>
+          <td>0</td>
+          <td>1.0</td>
+          
+        </tr>
+      
+        <tr class="t-file">
           <td class="strong t-file__name"><a href="#d94ab20d148c4f8c6e6bf136c0cb6b420ddd5732" class="src_link" title="app/models/ride.rb">app/models/ride.rb</a></td>
           <td class="green strong t-file__coverage">100.0 %</td>
           <td>6</td>
           <td>5</td>
           <td>5</td>
+          <td>0</td>
+          <td>1.0</td>
+          
+        </tr>
+      
+        <tr class="t-file">
+          <td class="strong t-file__name"><a href="#d39f8710fc5a19f0548e0812969539a614ff5404" class="src_link" title="app/models/ride_mechanic.rb">app/models/ride_mechanic.rb</a></td>
+          <td class="green strong t-file__coverage">100.0 %</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
           <td>0</td>
           <td>1.0</td>
           
@@ -253,6 +275,28 @@
           <td>1</td>
           <td>0</td>
           <td>1.0</td>
+          
+        </tr>
+      
+        <tr class="t-file">
+          <td class="strong t-file__name"><a href="#ce9950c92a1046aa6e130e4f130d71411c2756c6" class="src_link" title="spec/models/mechanic_spec.rb">spec/models/mechanic_spec.rb</a></td>
+          <td class="green strong t-file__coverage">100.0 %</td>
+          <td>13</td>
+          <td>8</td>
+          <td>8</td>
+          <td>0</td>
+          <td>1.5</td>
+          
+        </tr>
+      
+        <tr class="t-file">
+          <td class="strong t-file__name"><a href="#b7639fdc3ffddcee8d5caffbeace1f1850df53ac" class="src_link" title="spec/models/ride_mechanic_spec.rb">spec/models/ride_mechanic_spec.rb</a></td>
+          <td class="green strong t-file__coverage">100.0 %</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0</td>
+          <td>1.4</td>
           
         </tr>
       
@@ -475,6 +519,103 @@
 </div>
 
       
+        <div class="source_table" id="c97064d4830db1cae7170212b8f59955315f328a">
+  <div class="header">
+    <h3>app/models/mechanic.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Mechanic &lt; ApplicationRecord</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates_presence_of :name, :years_of_experience</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  has_many :ride_mechanics</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  has_many :rides, through: :ride_mechanics</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="d94ab20d148c4f8c6e6bf136c0cb6b420ddd5732">
   <div class="header">
     <h3>app/models/ride.rb</h3>
@@ -558,6 +699,81 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="d39f8710fc5a19f0548e0812969539a614ff5404">
+  <div class="header">
+    <h3>app/models/ride_mechanic.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class RideMechanic &lt; ApplicationRecord</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :mechanic</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :ride</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 
@@ -2677,6 +2893,299 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="ce9950c92a1046aa6e130e4f130d71411c2756c6">
+  <div class="header">
+    <h3>spec/models/mechanic_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>8</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe Mechanic, type: :model do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &quot;validations&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it {should validate_presence_of :name}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it {should validate_presence_of :years_of_experience}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &quot;relationships&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="10">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it {should have_many :ride_mechanics}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="11">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it {should have_many(:rides).through(:ride_mechanics)}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="b7639fdc3ffddcee8d5caffbeace1f1850df53ac">
+  <div class="header">
+    <h3>spec/models/ride_mechanic_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe RideMechanic, type: :model do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &quot;relationships&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="5">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it {should belong_to :mechanic}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it {should belong_to :ride}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
