@@ -216,6 +216,47 @@
           null
         ]
       },
+      "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/spec/features/mechanics/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/spec/models/amusement_park_spec.rb": {
         "lines": [
           1,
@@ -339,6 +380,6 @@
         ]
       }
     },
-    "timestamp": 1595001928
+    "timestamp": 1595002499
   }
 }

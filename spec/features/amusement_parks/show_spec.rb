@@ -1,18 +1,22 @@
-# Story 2
-# As a visitor,
-# When I visit an amusement park’s show page
-# I see the name and price of admissions for
-# that amusement park
-# And I see the names of all the rides that
-# are at that theme park listed in alphabetical
-# order
-# And I see the average thrill rating of this
-# amusement park’s rides
-# Ex: Hershey Park
-#    Admissions: $50.00
-#
-#    Rides:
-#           1. Lightning Racer
-#           2. Storm Runner
-#           3. The Great Bear
-#    Average Thrill Rating of Rides: 7.8/10
+require 'rails_helper'
+
+RSpec.describe "amusement park show page", type: :feature do
+  it 'can display information about a given amusement park' do
+    elitch_gardens = AmusementPark.create(name: "Elitch Gardens", admission_price: 65)
+
+    boomerang = elitch_gardens.rides.create(name: "Boomerang", thrill_rating: 8)
+    half_pipe = elitch_gardens.rides.create(name: "Half Pipe", thrill_rating: 7)
+    tower_of_doom = elitch_gardens.rides.create(name: "Tower of Doom", thrill_rating: 10)
+
+    visit "/amusement_parks/#{elitch_gardens.id}"
+
+    expect(page).to have_content("#{elitch_gardens.name}")
+    expect(page).to have_content("Admissions: $#{elitch_gardens.admission_price}.00")
+
+    expect(page).to have_content("Rides:")
+    expect(page).to have_content("1. #{boomerang.name}")
+    expect(page).to have_content("2. #{half_pipe.name}")
+    expect(page).to have_content("3. #{tower_of_doom.name}")
+    expect(page).to have_content("Average Thrill Rating of Rides: 8.3/10")
+  end
+end
