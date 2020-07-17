@@ -25,12 +25,12 @@ RSpec.describe "mechanic show page", type: :feature do
     expect(page).to have_content("#{half_pipe.name}")
 
     expect(page).to have_content("Add a ride to workload:")
-
-    fill_in "Ride ID", with: cyborg.id
+    save_and_open_page
+    fill_in "Ride", with: cyborg.id
 
     click_on "Submit Ride"
 
     expect(current_path).to eq("/mechanics/#{ayano.id}")
-    xpect(page).to have_content("#{cyborg.name}")
+    expect(page).to have_content("#{cyborg.name}")
   end
 end
