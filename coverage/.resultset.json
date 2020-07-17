@@ -232,22 +232,33 @@
       },
       "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/spec/models/ride_spec.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
           null,
           null,
+          1,
+          2,
+          2,
+          2,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          null
+        ]
+      },
+      "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/app/models/ride.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1594999440
+    "timestamp": 1594999944
   }
 }
