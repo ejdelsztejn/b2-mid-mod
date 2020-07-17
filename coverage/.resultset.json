@@ -207,6 +207,7 @@
           1,
           null,
           1,
+          1,
           null,
           1,
           null
@@ -254,6 +255,46 @@
           1,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/spec/features/mechanics/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
           null,
           null
         ]
@@ -392,6 +433,6 @@
         ]
       }
     },
-    "timestamp": 1595004429
+    "timestamp": 1595004889
   }
 }

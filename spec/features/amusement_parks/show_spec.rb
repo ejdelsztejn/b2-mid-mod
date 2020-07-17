@@ -9,7 +9,7 @@ RSpec.describe "amusement park show page", type: :feature do
     tower_of_doom = elitch_gardens.rides.create(name: "Tower of Doom", thrill_rating: 10)
 
     visit "/amusement_parks/#{elitch_gardens.id}"
-    save_and_open_page
+
     expect(page).to have_content("#{elitch_gardens.name}")
     expect(page).to have_content("Admissions: $#{elitch_gardens.admission_price}.00")
 
