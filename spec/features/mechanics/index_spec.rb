@@ -32,6 +32,7 @@ RSpec.describe "mechanic index page", type: :feature do
     expect(page).to have_content("#{ayano.years_of_experience} years of experience")
     expect(page).to have_content("#{chava.years_of_experience} years of experience")
     expect(page).to have_content("#{majd.years_of_experience} years of experience")
+    save_and_open_page
   end
 end
 
