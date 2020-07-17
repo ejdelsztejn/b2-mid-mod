@@ -1,0 +1,2 @@
+class AmusementParksController < ApplicationController
+end
