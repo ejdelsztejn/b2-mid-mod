@@ -364,9 +364,8 @@
           null
         ]
       },
-      "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/app/controllers/mechanics_controller.rb": {
+      "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/app/controllers/amusement_parks_controller.rb": {
         "lines": [
-          1,
           1,
           1,
           null,
@@ -379,8 +378,17 @@
           1,
           null
         ]
+      },
+      "/Users/jejdelman/turing/module2/challenges/b2-mid-mod/app/controllers/mechanics_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1595002572
+    "timestamp": 1595002656
   }
 }
